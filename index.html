@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUIT | HOME</title>
+    <link rel="shortcut icon" type="images" href="images/logo.png">
+
+    <!-- font awesome cdn link(fonts ke lie)  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo"> <i class="fas fa-user-graduate"></i> JUIT </a>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="gallery1.html">GALLERY</a></li>
+                <li><a href="Event.html">EVENT</a></li>
+                <li><a href="map.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+    <!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<body>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 5</div>
+    <img src="images/ss1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 5</div>
+    <img src="images/ss2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 5</div>
+    <img src="images/ss3.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 5</div>
+    <img src="images/ss4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 5</div>
+    <img src="images/ss5.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/ss1.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/ss2.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/ss3.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/ss4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/ss5.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+    </div>    
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
+
+    <section class="home">
+
+        <div class="image">
+            <img src="images/home-img.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>"Education is the manifestation of perfection already in man."</h3>
+            <h2>-Swami Vivekananda</h2>
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+    <!DOCTYPE html>
+
+</html>
+    <!-- categories section starts  -->
+
+    <section class="category">
+
+        <a href="#" class="box">
+            <img src="images/category-1.png" alt="">
+            <h3>computer science</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="images/category-2.png" alt="">
+            <h3>Information Technology</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="images/category-3.png" alt="">
+            <h3>Civil</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="images/category-4.png" alt="">
+            <h3>Bioinformatics & Technology</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="images/category-5.png" alt="">
+            <h3>Electronics & Communication</h3>
+        </a>
+
+    </section>
+
+    <!-- categories section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>explore</h3>
+                <a href="index.html"> <i class="fas fa-arrow-right"></i> HOME </a>
+                <a href="about.html"> <i class="fas fa-arrow-right"></i> ABOUT </a>
+                <a href="gallery1.html"> <i class="fas fa-arrow-right"></i> GALLERY </a>
+                <a href="Event.html"> <i class="fas fa-arrow-right"></i> Event </a>
+                <a href="map.html"> <i class="fas fa-arrow-right"></i> CONTACT US </a>
+            </div>
+
+            <div class="box">
+                <h3>Follow US</h3>
+                <a href="https://www.facebook.com/"> <i class="fab fa-facebook-f"></i> facebook </a> </a>
+                <a href="https://twitter.com"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="https://www.linkedin.com/"> <i class="fab fa-linkedin"></i> linkedin </a>
+                <a href="https://www.instagram.com/"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="https://www.youtube.com/"> <i class="fab fa-youtube"></i> youtube </a>
+                <a href="https://www.github.com/"> <i class="fab fa-github"></i> github </a>
+            </div>
+
+        </div>
+
+        
+
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

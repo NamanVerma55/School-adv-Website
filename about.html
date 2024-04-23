@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUIT | About</title>
+    <link rel="shortcut icon" type="images" href="images/logo.png">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo"> <i class="fas fa-user-graduate"></i> JUIT </a>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="gallery1.html">GALLERY</a></li>
+                <li><a href="Event.html">EVENT</a></li>
+                <li><a href="map.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <section class="heading">
+        <h3>about us</h3>
+        <p> <a href="home.html">home >></a> about </p>
+    </section>
+
+    <!-- about section starts  -->
+
+    <section class="about">
+
+        <div class="image">
+            <img src="images/about-img.jpg" alt="">
+        </div>
+
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+                #more {
+                    display: none;
+                }
+            </style>
+        </head>
+        <div>
+        <h2>The JUIT was conceived by a joint vision of the Govt of Himachal Pradesh and the Founder Chairman of
+            Jaypee Group Shri JaiPrakash Gaur in 2000. Land was provided on lease by the State Govt and the
+            university was established by Act No 14 of 2002 vide Extraordinary Gazette Notification of the Govt of
+            Himachal Pradesh dated May 23, 2002. The University Grants Commission accorded its approval under
+            Section 2(f) of the UGC Act vide their Letter No. F 9-10/2002(CPP-1) dated 09 Dec 2002. The JUIT is also
+            a member of the Association of Indian Universities (AIU).<span id="dots">...</span><span id="more">The
+                academic activities of JUIT commenced from July 2002 and currently offering undergraduate B. Tech
+                degree programs in Bioinformatics, Biotechnology, Civil Engineering, Computer Science & Engineering,
+                Electronics & Communication Engineering, Electronics & Computer Engineering and Information
+                Technology.
+                Besides B. Tech programs, the university is presently offering M. Tech in Biotechnology,
+                Biotechnology with specialization in Industrial Biotechnology and Medical Biotechnology, Civil
+                Engineering with specialization in Structural Engineering, Construction Management and Environmental
+                Engineering, Computer Science and Engineering, Computer Science and Engineering with specialization
+                in Information Security and Data Science, Electronics and Communication Engineering, Electronics and
+                Communication Engineering with specialization in Internet of Things. M Sc Programs are offered in
+                Biotechnology, and Microbiology.
+                Doctoral Phd is offered in Biotechnology, Bioinformatics, Civil Engineering, Computer Science and
+                Engineering, Electronics and Communication Engineering, Humanities and Social Sciences, Mathematics,
+                Physics and Materials Science.</span></h2>
+        <button onclick="myFunction()" id="myBtn">Read more</button><br>
+        <a href="https://www.juit.ac.in/sister-institutes" class="btn">Know more</a>
+        </div>
+        <script>
+            function myFunction() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more";
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less";
+                    moreText.style.display = "inline";
+                }
+            }
+        </script>
+
+        
+    </section>
+
+
+    <!-- about section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>explore</h3>
+                <a href="index.html"> <i class="fas fa-arrow-right"></i> HOME </a>
+                <a href="about.html"> <i class="fas fa-arrow-right"></i> ABOUT </a>
+                <a href="gallery1.html"> <i class="fas fa-arrow-right"></i> GALLERY </a>
+                <a href="Event.html"> <i class="fas fa-arrow-right"></i> Event </a>
+                <a href="map.html"> <i class="fas fa-arrow-right"></i> CONTACT US </a>
+            </div>
+
+            <div class="box">
+                <h3>Follow US</h3>
+                <a href="https://www.facebook.com/"> <i class="fab fa-facebook-f"></i> facebook </a> </a>
+                <a href="https://twitter.com"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="https://www.linkedin.com/"> <i class="fab fa-linkedin"></i> linkedin </a>
+                <a href="https://www.instagram.com/"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="https://www.youtube.com/"> <i class="fab fa-youtube"></i> youtube </a>
+                <a href="https://www.github.com/"> <i class="fab fa-github"></i> github </a>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
